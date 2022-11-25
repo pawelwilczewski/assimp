@@ -32,6 +32,9 @@ project 'assimp'
 	language "C++"
     staticruntime "off"
 
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("intermediate/" .. outputdir .. "/%{prj.name}")
+
 	includedirs {
 		'contrib/',
 		'contrib/irrXML/',
